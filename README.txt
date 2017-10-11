@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Plugin provides the capability for administrators and editors to create Notices and display them to all users or only to some authors.
 
-== Description ==
+== Description (updated) ==
 
 Once you activate the plugin you will see a new Menu Page on the left called Notices from where you could adjust the General and Design Settings, see Notices published and create new Notices to show.
 
@@ -54,7 +54,7 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 * Added custom capabilities and set specific capabilities for editors and authors
 * Now showing all users in meta box Target Authors
 * Add feature: add target Author groups with default groups based on roles
-* Add feature: target more users in order to create custom groups 
+* Add feature: target more users in order to create custom groups
 
 = 1.0.1 =
 
@@ -86,4 +86,3 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 = 1.0 =
 
 * First version of the plugin. No Updates available yet.
-
