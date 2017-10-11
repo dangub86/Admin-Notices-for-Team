@@ -1,0 +1,470 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"ant_admin_notices_team\n"
+"POT-Creation-Date: "
+"2017-07-17 12:50+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: "
+"ant_admin_notices_team\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit "
+"2.0.1\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: admin/class-ant_admin_notices_team-admin.php:135
+msgctxt ""
+"post type general name"
+msgid "Notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:136
+msgctxt ""
+"post type singular name"
+msgid "Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:137
+msgctxt "admin menu"
+msgid "Notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:138
+msgctxt ""
+"add new on admin bar"
+msgid "Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:139
+msgctxt "notice"
+msgid "Add New"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:140
+msgid "Add New Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:141
+msgid "New Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:142
+msgid "Edit Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:143
+msgid "View Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:144
+msgid "All Notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:145
+msgid "Search Notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:146
+msgid "Parent Notices:"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:147
+msgid "No notices found."
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:148
+msgid ""
+"No notices found in "
+"Trash."
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:153
+msgid "Description."
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:199
+msgid "Notices Options"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:248
+msgid "Target Author"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:263
+msgid ""
+"Target Author's Groups"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:273
+msgid "Group Name"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:277
+msgid ""
+"Add Authors to Group"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:285
+msgid "Set Expiration Date"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:373
+#: admin/class-ant_admin_notices_team-admin.php:374
+#: admin/class-ant_admin_notices_team-admin.php:401
+msgid "Settings"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:430
+msgid "General Options"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:437
+msgid "Design Options"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:445
+msgid ""
+"<div class="
+"\"woo_box_title\">Notice "
+"Number</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:450
+msgid "notice-number"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:451
+msgid ""
+"Set the number of "
+"Notices you want to "
+"display"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:482
+msgid ""
+"<div class="
+"\"woo_box_title\">LET "
+"targetting Authors</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:487
+msgid ""
+"toggle-target-authors"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:488
+msgid ""
+"Enable a meta box in "
+"Notice Custom Post for "
+"targetting specific "
+"authors"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:507
+msgid ""
+"<div class="
+"\"woo_box_title\">Notice "
+"Position</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:512
+msgid "notice-position"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:513
+msgid "display-inline"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:514
+msgid ""
+"Where do you want to "
+"position the notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:515
+msgid ""
+"Display Notices Inline"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:520
+msgid ""
+"<div class="
+"\"woo_box_title\">Notice "
+"Width</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:525
+msgid "notice-width"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:526
+msgid "width-unit"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:527
+msgid "Choose the unit"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:528
+msgid "50"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:533
+msgid ""
+"<div class="
+"\"woo_box_title\">Notice "
+"Type</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:538
+msgid "notice-type"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:539
+msgid ""
+"Choose the Type of "
+"Notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:540
+msgid "Thin"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:541
+msgid "Large "
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:546
+msgid ""
+"<div class="
+"\"woo_box_title\">Notice "
+"Style</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:551
+msgid "notice-style"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:552
+msgid ""
+"Choose the style of "
+"Notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:553
+msgid "Default Basic"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:554
+msgid ""
+"Warning Yellow Notice "
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:555
+msgid "Info Blue Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:556
+msgid ""
+"Success Green Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:557
+msgid "Error Red Notice"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:562
+msgid ""
+"<div class="
+"\"woo_box_title\">Use "
+"Custom Style</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:567
+msgid "toggle-custom-style"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:568
+msgid ""
+"Customize the css "
+"rendering of your admin "
+"notices"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:573
+msgid ""
+"<div class="
+"\"woo_box_title\">Font "
+"Style</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:578
+msgid "font-style"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:579
+msgid "font-size"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:580
+msgid "font-color"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:581
+msgid "14"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:582
+msgid "black"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:583
+msgid "Choose the Font"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:584
+msgid "Font Color"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:589
+msgid ""
+"<div class="
+"\"woo_box_title"
+"\">Background Color</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:594
+msgid "bg-color"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:595
+msgid ""
+"Choose the Background "
+"Color"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:600
+msgid ""
+"<div class="
+"\"woo_box_title"
+"\">Border</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:605
+msgid "border-style"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:606
+msgid "border-color"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:607
+msgid ""
+"Customize the Notices's "
+"Border"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:608
+#: admin/class-ant_admin_notices_team-admin.php:620
+msgid "0"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:613
+msgid ""
+"<div class="
+"\"woo_box_title\">Border "
+"Radius</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:618
+msgid "border-radius"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:619
+msgid ""
+"Set the Notices's Border "
+"Radius"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:625
+msgid ""
+"<div class="
+"\"woo_box_title\">Custom "
+"Css</div>"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:630
+msgid "custom-css"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:631
+msgid "Add your Custom CSS"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:893
+#: admin/class-ant_admin_notices_team-admin.php:927
+#: admin/class-ant_admin_notices_team-admin.php:961
+#: admin/class-ant_admin_notices_team-admin.php:1079
+msgid "enabled"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:894
+#: admin/class-ant_admin_notices_team-admin.php:928
+#: admin/class-ant_admin_notices_team-admin.php:962
+#: admin/class-ant_admin_notices_team-admin.php:1080
+msgid "disabled"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:1032
+#: admin/class-ant_admin_notices_team-admin.php:1096
+msgid "Value:"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:1059
+msgid "px"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:1086
+msgid "Margin:"
+msgstr ""
+
+#: admin/class-ant_admin_notices_team-admin.php:1251
+msgid "Size:"
+msgstr ""
