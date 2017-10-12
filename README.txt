@@ -4,13 +4,13 @@ Donate link: http://plugwpress.com/ant-notice-documentation/
 Tags: Admin, Utility, Notices, Team, Blog, Bloggers, Communication, Backend
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Plugin provides the capability for administrators and editors to create Notices and display them to all users or only to some authors.
 
-== Description (updated) ==
+== Description ==
 
 Once you activate the plugin you will see a new Menu Page on the left called Notices from where you could adjust the General and Design Settings, see Notices published and create new Notices to show.
 
@@ -24,8 +24,8 @@ More info on www.plugwpress.com/ant-notice-documentation/
 
 To install the plugin you can use the classic method from Wordpress Repository directly from your backend or you can:
 
-1. Unzip the plugin file
-2. Upload the folder ‘ant-admin-notice-team’ and its contents to the ‘wp-content/plugins/’ directory
+1. Download the plugin zip file and unzip it
+2. Rename the unzipped folder to “admin-notices-for-team” and Upload it via ftp in ‘wp-content/plugins/’ directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
@@ -46,6 +46,11 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 
 == Changelog ==
 
+= 1.0.3 =
+
+* Fixed Notices User capabilities
+* Fixed bug with showing notice when target specific users
+
 = 1.0.2 =
 
 * Fixed Languages folder
@@ -54,7 +59,7 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 * Added custom capabilities and set specific capabilities for editors and authors
 * Now showing all users in meta box Target Authors
 * Add feature: add target Author groups with default groups based on roles
-* Add feature: target more users in order to create custom groups
+* Add feature: target more users in order to create custom groups 
 
 = 1.0.1 =
 
@@ -75,6 +80,10 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 
 == Upgrade Notice ==
 
+= 1.0.3 =
+
+* Fixed issues about Target feature and capabilities.
+
 = 1.0.2 =
 
 * Added features. Metabox with target author groups and possibility to show notices only in dashboard. Other code optimizations.
@@ -86,3 +95,4 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 = 1.0 =
 
 * First version of the plugin. No Updates available yet.
+

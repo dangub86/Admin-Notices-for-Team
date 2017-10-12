@@ -57,36 +57,6 @@
         });
 
 
-        // METABOX HIDE (FUTURE FUNCTION)
-
-        $( '#add_group' ).on( 'click', function() {
-            $(".meta_hidden").fadeIn(700);
-            $("#target_groups").fadeOut(500);
-            $("#return_group").fadeIn(700);
-            $( '#add_group' ).fadeOut(500);
-        });
-        $( '#return_group' ).on( 'click', function() {
-            $(".meta_hidden").fadeOut(500);
-            $("#return_group").fadeOut(500);
-            $( '#add_group' ).fadeIn(700);
-            $("#target_groups").fadeIn(700);
-        });
-        $( '#add_group_alt' ).on( 'click', function() {
-            $(".meta_hidden_alt").fadeIn(700);
-            $("#target_groups_alt").fadeOut(500);
-            $("#target_label").fadeOut(500);
-            $("#return_group_alt").fadeIn(700);
-            $( '#add_group_alt' ).fadeOut(500);
-        });
-        $( '#return_group_alt' ).on( 'click', function() {
-            $(".meta_hidden_alt").fadeOut(500);
-            $("#return_group_alt").fadeOut(500);
-            $( '#add_group_alt' ).fadeIn(700);
-            $("#target_groups_alt").fadeIn(700);
-            $("#target_label_alt").fadeIn(700);
-        });
-
-
         //DATEPICKER FIELDS
 
         $('.ant-date-picker').datepicker({

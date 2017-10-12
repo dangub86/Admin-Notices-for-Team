@@ -267,8 +267,12 @@ div#ant-content {
 #ant_dashboard_content input[type="range"]::-ms-thumb { width: 18px; height: 18px; border-radius: 15px; border: 0; background-color: #357c68; }
 
 
-.meta_hidden, #return_group, #add_group_alt, #target_label_alt, #target_groups_alt {
+.meta_hidden {
     display: none;
+}
+.meta_label_notices {
+    color: gray;
+    font-weight: 700;
 }
 .hidden {
     display: none !important;

@@ -284,89 +284,70 @@ class Ant_admin_notices_team_Admin {
 
 		// Users Dropdown Form
 
-		if ( $users && $options['toggle-target-authors'] == 'enabled' ) { ?>
-            <label for="target_author_field">
-				<?php _e( 'Target Author', 'your-plugin-textdomain' ); ?>
-            </label>
-            <select name="target_author_field">
-                <option value="">All Users</option>
-				<?php foreach ( $users as $user ) { ?>
-                    <option value="<?php echo $user->display_name; ?>"<?php selected( $user->display_name, $value, true ); ?>><?php echo $user->display_name; ?></option>
-				<?php } ?>
-            </select><br>
-			<?php
-
+		if ( $users && $options['toggle-target-authors'] == 'enabled' ) {
+		    if( empty($value_groups) ) {
+			    ?>
+                <label for="target_author_field" class="meta_label_notices">
+				    <?php _e( 'Target Author', 'your-plugin-textdomain' ); ?>
+                </label>
+                <select name="target_author_field">
+                    <option value="All">All Users</option>
+				    <?php foreach ( $users as $user ) { ?>
+                        <option value="<?php echo $user->display_name; ?>"<?php selected( $user->display_name, $value, true ); ?>><?php echo $user->display_name; ?></option>
+				    <?php } ?>
+                </select><br>
+			    <?php
+		    }
 		}
 
 		// Groups Dropdown Form and Add Group
 		if ( $options['toggle-target-author-groups'] == 'enabled' ) {
 
-            if ( in_array("", $value_custom_groups) ) {
 	            ?>
-                <label for="target_author_field" id="target_label">
+                <div id="target_groups">
+                <label for="target_author_field" class="meta_label_notices">
 		            <?php _e( 'Target Author\'s Groups', 'your-plugin-textdomain' ); ?>
                 </label>
-                <select name="target_author_groups" id="target_groups">
-
+                    <p>Choose one of the default groups</p>
+                <select name="target_author_groups">
                     <option value="">No Groups Selected</option>
 		            <?php foreach ($groups as $name => $val) { ?>
                         <option value="<?php echo $name; ?>"<?php selected( $name, $value_groups, true ); ?>><?php echo $name;?></option>
 		            <?php } ?>
-
                 </select><br>
-                <a href="#" id="return_group">Choose one of the deafult Groups</a><br>
-                <a href="#" id="add_group">Are you looking for custom Groups?</a><br>
+                </div>
 
-                <label for="add_to_group" class="meta_hidden">
-		            <?php _e( 'Select Users', 'your-plugin-textdomain' ); ?>
-                </label>
-                <select multiple="multiple" name="add_to_group[]" id="add_to_group" class="meta_hidden">
-                    <option value="">No Users Selected</option>
-		            <?php foreach ( $users as $user ) { ?>
-                        <option value="<?php echo $user->display_name; ?>"<?php selected( $user->display_name, $value_custom_groups, true ); ?>><?php echo $user->display_name; ?></option>
-		            <?php } ?>
-                </select><br>
-
-                <?php } else { ?>
-
-                <label for="target_author_field" id="target_label_alt">
-		            <?php _e( 'Target Author\'s Groups', 'your-plugin-textdomain' ); ?>
-                </label>
-                <select name="target_author_groups" id="target_groups_alt">
-
-                    <option value="">No Groups Selected</option>
-		            <?php foreach ($groups as $name => $val) { ?>
-                        <option value="<?php echo $name; ?>"<?php selected( $name, $value_groups, true ); ?>><?php echo $name;?></option>
-		            <?php } ?>
-
-                </select><br>
-            <a href="#" id="return_group_alt">Choose one of the deafult Groups</a><br>
-            <a href="#" id="add_group_alt">Are you looking for custom Groups?</a><br>
-
-                <label for="add_to_group" class="meta_hidden_alt">
-		            <?php _e( 'Select Users', 'your-plugin-textdomain' ); ?>
-                </label>
-                <select multiple="multiple" name="add_to_group[]" id="add_to_group" class="meta_hidden_alt">
-                    <option value="">No Users Selected</option>
-		            <?php foreach ( $users as $user ) { ?>
-                        <option value="<?php echo $user->display_name; ?>"<?php selected( $user->display_name, $value_custom_groups, true ); ?>><?php echo $user->display_name; ?></option>
-		            <?php } ?>
-                </select><br>
-            <div class="meta_hidden_alt author_tags_container">
-				<?php
-                foreach ($value_custom_groups as $k => $v) {
-	                //echo implode( ", ", $value_custom_groups );
-                    ?>
-                    <div class="author_tags">
+                <div id="custom_groups">
+                    <p>or you can select multiple users and create your custom groups</p>
+                    <label for="add_to_group" class="meta_label_notices">
+                        <?php _e( 'Select Users', 'your-plugin-textdomain' ); ?>
+                    </label>
+                    <select multiple="multiple" name="add_to_group[]" id="add_to_group">
+                        <option value="No Users Selected">No Users Selected</option>
+                        <?php foreach ( $users as $user ) { ?>
+                            <option value="<?php echo $user->display_name; ?>"<?php selected( $user->display_name, $value_custom_groups, true ); ?>><?php echo $user->display_name; ?></option>
+                        <?php } ?>
+                    </select><br>
                     <?php
-                    echo $v;
+
                     ?>
+                    <div class="author_tags_container">
+		                <?php
+		                foreach ( $value_custom_groups as $k => $v ) {
+			                if ( $v != "" ) {
+				                ?>
+                                <div class="author_tags">
+					                <?php
+					                echo $v;
+					                ?>
+                                </div><br>
+				                <?php
+			                }
+		                }
+                        ?>
                     </div><br>
-                    <?php
-                }
-				?>
-            </div><br>
-                <?php } ?>
+                </div><br>
+
             <?php
 
 		}
@@ -1472,6 +1453,8 @@ class Ant_admin_notices_team_Admin {
 				$authorOptions = get_post_meta( $notice->ID, '_target_author_key', true );
 				$authorOptionGroups = get_post_meta( $notice->ID, '_target_author_groups', true );
 				$authorCustomGroups = get_post_meta( $notice->ID, '_author_groups', true );
+
+
 				if (
 				    $authorOptionGroups == 'Admin Users'
                 ) {
@@ -1495,17 +1478,26 @@ class Ant_admin_notices_team_Admin {
 						$authorOptionGroups = $contributors;
 					}
 				}
+
+
+
 				$ant_dismiss = get_user_option("ant-dismiss-$notice_id", $user_id);
 
 				if (
-                 ($authorOptions == '' && $authorOptionGroups == '') ||
-                 (in_array("", $authorCustomGroups)) ||
-                 ($authorOptions == $current_user->display_name) ||
-                 ( isset($authorOptionGroups) && in_array($current_user->display_name, $authorOptionGroups) ) ||
-                 ( isset($authorCustomGroups) && in_array($current_user->display_name, $authorCustomGroups) ) &&
-                 $ant_dismiss != "dismissed" &&
-                 ( $current_time < $expires || empty($expires) )
+                    (
+                        (
+                                $authorOptions == "All"
+                                && empty($authorOptionGroups)
+                          && ( !isset($authorCustomGroups) || in_array("No Users Selected", $authorCustomGroups) )
+                        )
+                          ||  ( $authorOptions == $current_user->display_name)
+                        ||  in_array($current_user->display_name, $authorOptionGroups)
+                        ||  in_array($current_user->display_name, $authorCustomGroups)
+                    )
+                 && ( $ant_dismiss != "dismissed" )
+                 && ( $current_time < $expires || empty($expires) )
                 ) {
+
 						?>
                         <div class="ant-notice-wrap">
                             <div class='notice ant-notice <?php
@@ -1513,11 +1505,11 @@ class Ant_admin_notices_team_Admin {
 								print_r( array_values( $noticeClasses ) );
 							}
 							( ! empty( $notice->post_content ) ) ? print( 'ant-tip' ) : print( '' ); ?> is-dismissible'
-                                 data-tip="<?php echo $notice->post_content; ?>" data-notice-id="<?php echo $notice_id; ?>" tabindex="1">
+                                 data-tip="<?php echo $notice->post_content; ?>"
+                                 data-notice-id="<?php echo $notice_id; ?>" tabindex="1">
 								<?php
 								echo $notice->post_title;
 
-								//var_dump( $notice->ID );
 								/*
 								 *
 								 * for custom dismiss future update
@@ -1529,6 +1521,7 @@ class Ant_admin_notices_team_Admin {
                         </div>
 						<?php
 					}
+
 				  }
                 }
             }
