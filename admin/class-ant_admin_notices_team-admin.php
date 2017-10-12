@@ -1486,13 +1486,13 @@ class Ant_admin_notices_team_Admin {
 				if (
                     (
                         (
-                                $authorOptions == "All"
+                                ( $authorOptions == "All" || empty($authorOptions) )
                                 && empty($authorOptionGroups)
-                          && ( !isset($authorCustomGroups) || in_array("No Users Selected", $authorCustomGroups) )
+                          && ( empty($authorCustomGroups) || in_array("No Users Selected", $authorCustomGroups) )
                         )
                           ||  ( $authorOptions == $current_user->display_name)
-                        ||  in_array($current_user->display_name, $authorOptionGroups)
-                        ||  in_array($current_user->display_name, $authorCustomGroups)
+													||  in_array($current_user->display_name, $authorOptionGroups)
+	                        ||  in_array($current_user->display_name, $authorCustomGroups)
                     )
                  && ( $ant_dismiss != "dismissed" )
                  && ( $current_time < $expires || empty($expires) )
@@ -1588,11 +1588,11 @@ class Ant_admin_notices_team_Admin {
 
 
 	    $custom_css = "
-	    
+
                 .ant-notice {
                         width: {$width}{$unit};
                         margin-left: {$margin}% !important;
-                        
+
                 }";
 
 	     /* Future update: adding custom dismiss maybe on hover
@@ -1613,13 +1613,13 @@ class Ant_admin_notices_team_Admin {
                          $custom_css .= "
                                    .wrap div.ant-notice, div.ant-notice {
                                           position: static;
-                                          display: inline-block;                          
+                                          display: inline-block;
                             }";
                      }
 
                          if ( $options_design['toggle-custom-style'] == 'enabled' ) {
                          $custom_css .= "
-                           .ant-notice {    
+                           .ant-notice {
                         font-family: {$font}, Helvetica, sans-serif !important;
                         font-size: {$fontSize}px !important;
                         color: {$fontColor} !important;

@@ -4,7 +4,7 @@ Donate link: http://plugwpress.com/ant-notice-documentation/
 Tags: Admin, Utility, Notices, Team, Blog, Bloggers, Communication, Backend
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,11 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 
 == Changelog ==
 
+= 1.0.4 =
+
+* Fixed bug with showing notices just published
+* Fixed bug with showing notices when select an author group and deselect it
+
 = 1.0.3 =
 
 * Fixed Notices User capabilities
@@ -59,7 +64,7 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 * Added custom capabilities and set specific capabilities for editors and authors
 * Now showing all users in meta box Target Authors
 * Add feature: add target Author groups with default groups based on roles
-* Add feature: target more users in order to create custom groups 
+* Add feature: target more users in order to create custom groups
 
 = 1.0.1 =
 
@@ -80,6 +85,10 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 
 == Upgrade Notice ==
 
+= 1.0.4 =
+
+* Fixed bugs with showing notices.
+
 = 1.0.3 =
 
 * Fixed issues about Target feature and capabilities.
@@ -95,4 +104,3 @@ This plugin fits your needs if you are searching for a simple but nice tool for 
 = 1.0 =
 
 * First version of the plugin. No Updates available yet.
-

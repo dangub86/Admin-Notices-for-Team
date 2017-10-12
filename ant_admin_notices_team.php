@@ -16,7 +16,7 @@
  * Plugin Name:       Ant Admin Notices for Team
  * Plugin URI:        http://plugwpress.com/ant-notice-documentation/
  * Description:       It provides the capability for administrators and/or editors to create Notices and display it to all users, only to specific authors or by targetting custom user's groups.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            PlugWPress
  * Author URI:        http://plugwpress.com
  * License:           GPL-2.0+
@@ -73,6 +73,3 @@ function run_ant_admin_notices_team() {
 
 }
 run_ant_admin_notices_team();
-
-
-

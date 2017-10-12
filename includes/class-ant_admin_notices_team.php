@@ -69,7 +69,7 @@ class Ant_admin_notices_team {
 	public function __construct() {
 
 		$this->plugin_name = 'ant_admin_notices_team';
-		$this->version = '1.0.1';
+		$this->version = '1.0.4';
 
 		$this->load_dependencies();
 		$this->set_locale();
