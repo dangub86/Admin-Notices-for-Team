@@ -25,6 +25,38 @@
  * Domain Path:       /languages
  */
 
+ // Create a helper function for easy SDK access.
+ function anft_fs() {
+     global $anft_fs;
+
+     if ( ! isset( $anft_fs ) ) {
+         // Include Freemius SDK.
+         require_once dirname(__FILE__) . '/freemius/start.php';
+
+         $anft_fs = fs_dynamic_init( array(
+             'id'                  => '1454',
+             'slug'                => 'admin-notices-for-team',
+             'type'                => 'plugin',
+             'public_key'          => 'pk_d5387c2d2b68df537c9afae0121ea',
+             'is_premium'          => false,
+             'has_addons'          => false,
+             'has_paid_plans'      => false,
+             'menu'                => array(
+                 'slug'           => 'edit.php?post_type=notice',
+                 'account'        => false,
+                 'support'        => false,
+             ),
+         ) );
+     }
+
+     return $anft_fs;
+ }
+
+ // Init Freemius.
+ anft_fs();
+ // Signal that SDK was initiated.
+ do_action( 'anft_fs_loaded' );
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
